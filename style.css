@@ -1,0 +1,368 @@
+body{
+    background-color: #0D0D0D;
+}
+/* navigation bar css */
+nav{
+    display: flex;
+    background-color: #1A1A1A;
+    justify-content: space-between; 
+  color: #F8F4E3;     
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+   
+}
+nav ul li{
+    padding: 10px;
+}
+nav img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+
+}
+nav div{
+    margin-top: 25px;
+    font-size: 21px;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+nav a {
+  color: #F8F4E3;     
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #FF6B35;     
+}
+/* home section css */
+.home {
+    background-color:#0D0D0D;
+    height: auto;
+    display: flex;
+    align-items:center;  
+    justify-content: space-between; 
+    padding: 20px;
+    color:#FFFFFF;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color:#F5F5F5; 
+    margin: 0;
+    text-shadow: 0 0 10px #ffcc66;
+}
+.home h2 {
+    font-size: 2rem;
+    color:#B2B2B2; 
+    margin: 0;
+    
+}
+
+.home img {
+    max-width: 60%; 
+    height: auto;
+    border-radius: 10px; 
+}
+/* menu section css */
+.menu {
+  width: 100%;
+  padding: 50px 10%;
+  background: #0D0D0D;
+  color: #F5F5F5;
+  box-sizing: border-box;
+}
+
+.menu h1 {
+  color:wheat;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #ffcc66;
+}
+.meu{
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     border: 1px solid #2A2A2A; 
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+}
+.menu table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  table-layout: fixed;
+}
+
+.menu td {
+  vertical-align: top;
+  padding: 20px;
+  border: 1px solid #2A2A2A; 
+  background: #1A1A1A; 
+  border-radius: 10px;
+}
+
+.menu h3 {
+  color: #FFB847; 
+  margin-bottom: 30px;
+  font-size: 2.7em;
+  text-shadow: 0 0 10px #ffcc66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+  font-size:1em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.menu td:hover {
+  background: #111111;
+  transition: 0.3s;
+}
+/* table section css */
+.FullMenu {
+    width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    
+}
+
+
+.FullMenu h1 {
+  color: wheat;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 2.3em;
+    text-shadow: 0 0 10px #ffcc66;
+}
+
+
+.FullMenu table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+    text-align: left;
+    font-size: 1.5em;
+    background: #1b1b1b;
+    color: white;
+}
+
+.FullMenu table, 
+.FullMenu th, 
+.FullMenu td {
+    border: 1px solid #333;
+}
+
+
+.FullMenu th {
+    background: #000;
+    color: #ffb32a;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.FullMenu td {
+    padding: 10px;
+}
+
+
+.FullMenu th[rowspan] {
+    background: #111;
+    color: #ffcc55;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.FullMenu tr:nth-child(even) {
+    background: #222;
+}
+
+.FullMenu tr:nth-child(odd) {
+    background: #181818;
+}
+
+
+.FullMenu tr:hover {
+    background: #333;
+    transition: 0.3s;
+}
+/* contact section css */
+
+.contact {
+    background: #111;           
+    color: #fff;                
+    padding: 60px 20px;
+    text-align: center;
+     width:95%;
+}
+
+.contact h1 {
+    font-size: 2.7em;
+    margin-bottom: 30px;
+    color:wheat;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffcc66;
+    letter-spacing: 2px;
+}
+
+
+.contact form {
+    width: auto;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+   box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+}
+
+
+.contact label {
+    display: block;
+    font-size: 2em;
+    margin: 15px 0 5px;
+    color: #ffcc66;
+    text-align: left;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+    font-size: 1.7em;
+    outline: none;
+    transition: 0.3s;
+}
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc66;
+    color: #111;
+    font-size: 1.8em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #e6b85c;
+     box-shadow: 0 0 15px #ffaa00;
+}
+
+
+/* Online Orders Section */
+.OnlineOrders {
+    padding: 80px 0;
+    background: #111;
+    text-align: center;
+    color: #fff;
+}
+
+.OnlineOrders h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color:wheat;
+    text-shadow: 0 0 10px #ffcc66;
+}
+
+.order-box {
+    width: 70%;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+    border: 1px solid rgba(255, 204, 0, 0.2);
+}
+
+.order-box h2 {
+    margin-bottom: 20px;
+    color: #ffcc66;
+}
+
+.order-box label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #ffcc66;
+    font-size: 1.7em;
+}
+
+.order-box input,
+.order-box textarea,
+.order-box select {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    font-size: 1.7em;
+}
+
+.order-box input:focus,
+.order-box textarea:focus,
+.order-box select:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+.order-btn {
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: #ffcc66;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #ffaa66;
+    box-shadow: 0 0 15px #ffaa00;
+}
+
+.note {
+    margin-top: 15px;
+    color: #aaa;
+}
